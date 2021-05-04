@@ -1,0 +1,12 @@
+{
+  "Name": "Back Village JA",
+    "Author": "Mary132",
+    "Version": "1.0.0",
+    "Description": "Items for Back Village",
+    "MinimumApiVersion": "3.6.0",
+    "UniqueID": "Mary132.Back_Village-JA",
+	"UpdateKeys": [ "Nexus:???" ],
+    "ContentPackFor": {
+    	"UniqueID": "spacechase0.JsonAssets"
+    },
+}

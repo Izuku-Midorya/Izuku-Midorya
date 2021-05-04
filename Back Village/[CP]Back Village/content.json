@@ -1,0 +1,129 @@
+{
+  "Format": "1.22.0",
+
+  "CustomLocations": [
+    {
+      "Name": "Custom_Back_Village",
+      "FromMapFile": "assets/Maps/Back Village.tbin"
+    },
+    {
+      "Name": "Custom_Witch_House",
+      "FromMapFile": "assets/Maps/Witch Tower.tbin"
+    },
+    {
+      "Name": "Custom_Witch_House_2F",
+      "FromMapFile": "assets/Maps/Witch Tower 2F.tbin"
+    },
+    {
+      "Name": "Custom_Witch_House_3F",
+      "FromMapFile": "assets/Maps/Witch Tower 3F.tbin"
+    }
+  ],
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Mountain",
+      "FromFile": "assets/Maps/MountainEntrance.tbin",
+      "FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 5 },
+      "ToArea": { "X": 34, "Y": 0, "Width": 4, "Height": 5 },
+      "PatchMode": "Replace"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Mountain",
+      "AddWarps": [
+        "35 0 Custom_Back_Village 70 60",
+        "36 0 Custom_Back_Village 71 60"
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Back_Village",
+      "AddWarps": [
+        "70 61 Mountain 35 1",
+        "71 61 Mountain 36 1"
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Witch_House",
+      "AddWarps": [
+        "16 19 Custom_Back_Village 73 12",
+        "12 0 Custom_Witch_House_2F 12 18",
+        "13 0 Custom_Witch_House_2F 13 18",
+        "14 0 Custom_Witch_House_2F 14 18"
+      ],
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Witch_House_2F",
+      "AddWarps": [
+        "12 19 Custom_Witch_House 12 1",
+        "13 19 Custom_Witch_House 13 1",
+        "14 19 Custom_Witch_House 14 1",
+        "0 17 Custom_Witch_House_3F 18 17",
+        "0 16 Custom_Witch_House_3F 18 16",
+        "0 15 Custom_Witch_House_3F 18 15"
+      ],
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_Witch_House_3F",
+      "AddWarps": [
+        "19 15 Custom_Witch_House_2F 1 15",
+        "19 16 Custom_Witch_House_2F 1 16",
+        "19 17 Custom_Witch_House_2F 1 17"
+      ],
+    },
+    {
+    "Action": "EditData",
+    "Target": "data/NPCDispositions",
+    "Entries": {
+      "Sherie": "adult/neutral/neutral/negative/female/non-datable/Wizard/Town/winter 16/Wizard 'Friend'/Custom_Witch_House_3F 1 5/Sherie"
+    }
+    },
+    {
+    "LogName": "NPC Gift Tastes",
+    "Action": "EditData",
+    "Target": "Data/NPCGiftTastes",
+    "Entries": {
+      "Sherie": "Oh Wow! I Love this!/72 84/This looks nice./78/Oh um Thanks...//No thanks.//Thanks... I guess.../ "
+    }
+    },
+    {
+    "LogName": "NPC Sprite",
+    "Action": "Load",
+    "Target": "Characters/Sherie",
+    "FromFile": "assets/Characters/Sherie.png"
+    },
+    {
+    "LogName": "NPC Portrait",
+    "Action": "Load",
+    "Target": "Portraits/Sherie",
+    "FromFile": "assets/Portraits/Sherie.png"
+    },
+    {
+    "LogName": "Schedule",
+    "Action": "Load",
+    "Target": "Characters/schedules/Sherie",
+    "FromFile": "assets/Schedules/Sherie/Schedule.json"
+    },
+    {
+    "LogName": "Dialogue",
+    "Action": "Load",
+    "Target": "Characters/Dialogue/Sherie",
+    "FromFile": "assets/Dialogue/Sherie/Dialogue.json"
+    },
+    {
+    "LogName": "Schedule Dialogue",
+    "Action": "Load",
+    "Target": "Strings/schedules/Sherie",
+    "FromFile": "assets/Schedules/Sherie/scheduleDialogue.json"
+  },
+  {
+    "Action": "Load",
+    "Target": "Animals/White Cow",
+    "FromFile": "assets/Animals/White Cow.png"
+  }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "Name": "Back Village FTM",
+  "Author": "Mary132",
+  "Version": "1.0.0",
+  "Description": "FarmTypeManager for Back Village",
+  "UniqueID": "Mary132.Back_Village-FTM",
+  "MinimumApiVersion": "1.0",
+  "UpdateKeys": [ "Nexus:???" ],
+  "ContentPackFor": {
+    "UniqueID": "Esca.FarmTypeManager",
+    "MinimumVersion": "1.8"
+   },
+}

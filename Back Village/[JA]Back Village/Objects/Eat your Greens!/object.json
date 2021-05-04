@@ -1,0 +1,14 @@
+{
+  "Name": "Eat Your Greens!",
+  "Description": "Who care what its supposed to be. Eat Your Greens!",
+  "Category": "Fruit",
+  "Edibility": 1000,
+  "Price": 7500,
+  "IsColored": false,
+  "Recipe": null,
+  "GiftTastes":
+  {
+  "Love": ["Sherie", "Alex"],
+  "Like": ["Caroline", "Clint", "Demetrius", "Dwarf", "Elliott", "Emily", "Evelyn", "George", "Gus", "Jas", "Jodi", "Kent", "Krobus", "Leah", "Lewis", "Linus", "Marnie", "Maru", "Pam", "Penny", "Pierre", "Robin", "Sandy", "Shane", "Willy", "Wizard","Abigail", "Haley", "Sam", "Sebastian", "Vincent"],
+  },
+}

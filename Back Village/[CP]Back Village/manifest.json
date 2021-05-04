@@ -1,0 +1,13 @@
+{
+  "Name": "Back Village",
+  "Author": "Mary132",
+  "Description": "Adds a Village to the game",
+  "Version": "1.0.0",
+  "UniqueID": "Mary132.Back_Village",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "UpdateKeys": [
+    "Nexus: "
+  ]
+}
